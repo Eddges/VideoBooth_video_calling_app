@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/room/room.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>VideoBooth</title>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+    </script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class='Top'>
+        <span class='Logo'><ion-icon name="hand-right"></ion-icon> VideoBooth</span>
+        <span class="Welcome">Welcome to VideoBooth!</span>
+    </div>
+    <div id="Videos">
+    </div>
+</body>
+</html>
