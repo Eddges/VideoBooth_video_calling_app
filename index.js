@@ -33,9 +33,6 @@ io.on('connection', socket => {
         console.log('roomIds join')
         socket.to(roomId).broadcast.emit('userConnected', userId)
     })
-    socket.on('disconnect', () => {
-        socket.to(roomId).broadcast.emit('user-disconnected')
-    })
 })
 
 server.listen(PORT, () => {

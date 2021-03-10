@@ -9,8 +9,7 @@ let id = '';
 
 landingRouter.route('/')
 .get((req, res, next) => {
-    res.redirect(`${newid = uuidv4()}`)
-    // console.log('new id : ' + newid)
+
 })
 
 
